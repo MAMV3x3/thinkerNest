@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #121212;
+    min-height: 500vh;
+    background-image: url("../thinkerNest/ilustrations/wave.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-body::-webkit-scrollbar {
+    display: none;
+}
+
+.main-body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    backdrop-filter: blur(18px);
+    z-index: 100000;
+}
+
+#main-container header #menu {
+    padding: 20px 0;
+    vertical-align: middle;
+}
+
+header #menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+header #menu ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+header #menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+header #menu ul li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 5px;
+    position: relative;
+    background: #B1094D;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+header #menu ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+header #menu ul #logo {
+    margin-right: 50%;
+    margin-left: 40px
+}
+
+.contenedor {
+    position: relative;
+    width: 50%;
+}
+
+
+.text {
+    color: white;
+    position: absolute;
+    width: 645px;
+    height: 300px;
+    left: 742px;
+    top: 295px;
+}
+
+.img {
+    position: absolute;
+    left: 155px;
+    top: 145px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.subtitle {
+    margin: 10px 0;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.join {
+    position: relative;
+    top: 50px;
+    width: 160px;
+    height: 72px;
+    background: #B1094D;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 23px;
+    display: table-cell;
+    vertical-align: middle;
+    transition: 0.4s;
+}
+
+.join:hover {
+    box-shadow: 0 -1px 40px rgba(141, 141, 141, 0.432);
+}
